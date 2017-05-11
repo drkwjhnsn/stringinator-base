@@ -17,7 +17,7 @@ const hasChar = function(str, target) {
 };
 
 const isOnlyDigits = function(str) {
-  // Your code goes here
+  return /^\d+$/.test(str) || str === '';
 };
 
 const filterToOnlyDigits = function(str) {

@@ -9,12 +9,11 @@ const last = function(str, n = 1) {
 };
 
 const removeChar = function(str, target) {
-  return _.reject(str, ele => ele === target).join('');
+  return _.reject(str, char => char === target).join('');
 };
 
 const hasChar = function(str, target) {
-  // hint: use _.so
-  // Your code goes here
+  return _.some(str, char => char === target);
 };
 
 const isOnlyDigits = function(str) {

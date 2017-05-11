@@ -40,7 +40,7 @@ const countChars = function(str) {
 };
 
 const dedup = function(str) {
-
+  return _.uniq(str).join('');
 };
 
 module.exports = {

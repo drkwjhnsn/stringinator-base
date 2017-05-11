@@ -34,11 +34,13 @@ const truncateLongItems = function(obj, maxLength) {
 };
 
 const countChars = function(str) {
-  // Your code goes here
+  let charRoster = {};
+  _.each(str, char => (charRoster[char]++) || (charRoster[char] = 1));
+  return charRoster;
 };
 
 const dedup = function(str) {
-  // Your code goes here
+
 };
 
 module.exports = {

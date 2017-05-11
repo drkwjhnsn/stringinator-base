@@ -1,11 +1,11 @@
 const _ = require('./underbar');
 
-const first = function(str, n) {
-  // Your code goes here
+const first = function(str, n = 1) {
+  return _.first(str, n);
 };
 
-const last = function(str, n) {
-  // Your code goes here
+const last = function(str, n = 1) {
+  return _.last(str, n)
 };
 
 const removeChar = function(str, target) {

@@ -5,16 +5,15 @@ const first = function(str, n = 1) {
 };
 
 const last = function(str, n = 1) {
-  return _.last(str, n)
+  return _.last(str, n);
 };
 
 const removeChar = function(str, target) {
-  // hint: use _.reject
-  // Your code goes here
+  return _.reject(str, ele => ele === target).join('');
 };
 
 const hasChar = function(str, target) {
-  // hint: use _.some
+  // hint: use _.so
   // Your code goes here
 };
 

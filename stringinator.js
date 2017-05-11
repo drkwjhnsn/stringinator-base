@@ -21,7 +21,7 @@ const isOnlyDigits = function(str) {
 };
 
 const filterToOnlyDigits = function(str) {
-  // Your code goes here
+  return _.filter(str, char => /\d/.test(char)).join('');
 };
 
 const truncateString = function(val, maxLength) {
